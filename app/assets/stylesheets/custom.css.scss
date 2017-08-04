@@ -1,4 +1,27 @@
-$navbar-default-bg:#fcbb31;
+$navbar-default-bg:#FFFFFF;
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+#logo{
+  color: black;
+  padding-right: 50px;
+}
+
+.text_over_image{
+  position: absolute;
+  left: 0;
+  top:50%;
+  width:100%;
+  text-align: center;
+  color:#FFFFFF;
+}
+.jumbotron{
+  padding: 0px;
+  background-color:#000000;
+  text-align:center;
+}
+
+h1{
+
+}

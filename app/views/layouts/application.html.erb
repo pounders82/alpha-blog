@@ -1,15 +1,18 @@
+<!-- This page will be on every page.  A good place to put nav bar but we want to keep this page clean so render
+ the bar-->
 <!DOCTYPE html>
 <html>
   <head>
     <title>AlphaBlog</title>
     <%= csrf_meta_tags %>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= render 'layouts/navigation' %>
+    <%= render 'layouts/navigation' %> <!-- This is the navigation bar -->
     <%= render "layouts/messages" %>
     <%= yield %>
   </body>
