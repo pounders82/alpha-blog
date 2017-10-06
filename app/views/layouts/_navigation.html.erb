@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-fixed-top">
   <div class="container text-center">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -9,16 +9,17 @@
         <span class="icon-bar"></span>
       </button>
 
-      <a class="navbar-brand" id= "logo" href="#">MAKING MY OWN SUNSHINE<span style="padding-left:10px; font-size: 10px ">My Personal Blog</span></a>
-
+      <!--<a class="navbar-brand" id= "logo" href="">MAKING MY OWN SUNSHINE<span style="padding-left:10px; font-size: 10px ">My Personal Blog</span></a>-->
+      <%=  link_to "MAKING MY OWN SUNSHINE", root_path, class: "navbar-brand" , id: "logo"%> <p class="navbar-brand" style="padding-left:10px;font-size: 10px">My Personal Blog</p>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
       <ul class="nav navbar-nav">
-        <li><a href="#">Home <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">About Me</a></li>
+        <!--<li><a href="#">Home <span class="sr-only">(current)</span></a></li>-->
+        <li><%= link_to "Home", root_path, class: "nav navbar-nav" %></li>
+        <li><%= link_to "About", about_path, class: "nav navbar-nav" %></li>
         <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
         <ul class="dropdown-menu">
@@ -40,8 +41,10 @@
           </ul>
         </li>
 
-        <li><a href="#">Contact</a></li>
-        <li><a href="https://www.facebook.com/stephanie.pounders.1015"><i style="color: blue" class="fa fa-facebook-f"></i></a></li>
+        <li><%= link_to "Contact", contact_path, class: "nav navbar-nav" %></li>
+        <li><%= link_to "Sign Up", contact_path, class: "btn btn-primary" %></li>
+        <li><%= link_to "Login", contact_path, class: "nav navbar-nav" %></li>
+        <li><a href=""><i style="color: blue" class="fa fa-facebook-f"></i></a></li>
 
       </ul>
     </div><!-- /.navbar-collapse -->
