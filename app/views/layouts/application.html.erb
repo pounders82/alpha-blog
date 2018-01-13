@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>AlphaBlog</title>
+    <title>Making My Own Sunshine</title>
     <%= csrf_meta_tags %>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -13,7 +13,13 @@
 
   <body>
     <%= render 'layouts/navigation' %> <!-- This is the navigation bar -->
-    <%= render "layouts/messages" %>
-    <%= yield %>
+    <%= render 'layouts/messages' %>
+
+    <div class="container"> <!-- This container class creates a small amount of padding on left and right -->
+      <%= yield %>
+    </div>
+
+    <%= render 'layouts/footers' %>
+
   </body>
 </html>
