@@ -38,6 +38,7 @@ gem 'railties', '~> 5.1', '>= 5.1.4'
 gem "ckeditor", :git => "https://github.com/galetahub/ckeditor.git"
 gem 'paperclip'
 gem 'carrierwave', '~> 1.0'
+gem 'mini_magick', '~> 4.5', '>= 4.5.1'
 
 
 group :development, :test do

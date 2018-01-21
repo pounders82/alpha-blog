@@ -28,3 +28,18 @@ $navbar-default-bg:#FFFFFF;
 footer{
   position: relative;bottom: 0;
 }
+
+.article-actions{
+  border-top: 1px solid #eaeaea;
+  padding-top: 5px;
+}
+
+.article-title{
+  font-weight: bold;
+  font-size: large;
+}
+
+.article-body{
+  border-top: 1px solid #eaeaea;
+  padding-top: 10px;
+}
