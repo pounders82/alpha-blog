@@ -15,7 +15,6 @@
 //= require bootstrap-sprockets
 
 //= require turbolinks
-//= require trix
 //= require ckeditor/init
 //= require_tree .
 
